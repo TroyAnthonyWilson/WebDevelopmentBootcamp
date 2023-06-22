@@ -1,0 +1,12 @@
+html{
+    background: pink;
+}
+
+h1{
+    text-shadow: blue;
+    text-shadow: 1rem;
+}
+
+.resume{
+    color: gold;
+}

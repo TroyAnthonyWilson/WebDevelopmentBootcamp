@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .flexing {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px auto;
+      grid-template-rows: 414px 130px 155px auto;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .red {
+      background-color: #e72f24;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .blue {
+      background-color: #004592;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .two {
+      grid-column: span 3;
+    }
+
+    .three {
+      grid-row: span 2;
+    }
+
+    .four {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .five {
+      border-bottom: solid black 10px;
+    }
+
+    .six {
+      grid-row: span 2;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="flexing">
+    <div class="container">
+      <div class="red"></div>
+      <div class="white two"></div>
+      <div class="white three"></div>
+      <div class="white four"></div>
+      <div class="blue five"></div>
+      <div class="white six"></div>
+      <div class="white"></div>
+      <div class="yellow seven"></div>
+      <div class="black"></div>
+    </div>
+  </div>
+</body>
+
+</html>

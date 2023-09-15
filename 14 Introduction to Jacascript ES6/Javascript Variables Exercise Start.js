@@ -6,9 +6,11 @@ function Text() {
   var a = "3";
   var b = "8";
 
-  var c = b;
-  b = a;
-  a = c;
+  //var c = b;
+  //b = a;
+  //a = c;
+
+  [a, b] = [b, a];
 
   console.log("a is " + a);
   console.log("b is " + b);
